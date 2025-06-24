@@ -29,7 +29,7 @@
     header h1 {
       font-size: 2rem;
     }
-    .galeriaimg{
+    .galeria{
       width: 100px;
       height: 100px;
       
@@ -80,12 +80,7 @@
       text-decoration: none;
       color: black;
     }
-    .service:hover,
-    .service:active{
-    background-color: #b82d2d;
-      
-   
-}
+  
     
     
 
@@ -166,12 +161,7 @@
       text-decoration: none;
       color: black;
     }
-    .service:hover,
-    .service:active{
-    background-color: #b82d2d;
-      
    
-}
    
     
     .gallery{
@@ -240,7 +230,8 @@
   
   <section class="cta">
     <h2 class="dsg">Quer um design incrível?</h2>
-    <a href="https://wa.me/11982172256">
+    <a href="https://wa.me/11982172256" id="teste" onmouseenter="efeito()"
+    onmouseout="efeitooff()">
       Solicite um orçamento</a>
   </section>
 
@@ -249,13 +240,15 @@
   </footer>
   </main>
   <script>
-    const botao = document.getElementById('service');
-    botao.addEventListener('touchstart', () => {
-      botao.classList.add('hover-efeito')
-    });
-    botao.addEventListener('touchend', () => {
-    botao.classList.remove('hover-efeito');
-    });
+    function efeito() {
+      const btn = document.getElementById("teste");
+      btn.style.background = "black";
+    }
+    function efeitooff(){
+       const btn2 = document.getElementById("teste");
+       btn2.style.background = "red";
+    }
+    
   </script>
 </body>
 </html>
