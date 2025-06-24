@@ -248,5 +248,14 @@
     &copy; 2025 Galeria do Design. Todos os direitos reservados.
   </footer>
   </main>
+  <script>
+    const botao = document.getElementById('service');
+    botao.addEventListener('touchstart', () => {
+      botao.classList.add('hover-efeito')
+    });
+    botao.addEventListener('touchend', () => {
+    botao.classList.remove('hover-efeito');
+    });
+  </script>
 </body>
 </html>
