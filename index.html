@@ -37,20 +37,21 @@
        
     }
    
-    section {
+    .intro{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 2rem 1rem;
-      max-width: 1000px;
-      height: 500px;
-      margin: auto;
+      margin-top: -30px;
+      height: auto;
+   
     }
 
-    .intro {
-      text-align: center;
-     
-    }
+   
     p{
       padding:10px;
     }
+  
 
     .intro h2 {
       color: #ff1e1e;
@@ -79,11 +80,14 @@
     .service:hover{
       transform: scale(1.1);
     }
+    
 
 
     .gallery {
       display: flex;
       justify-content: center;
+      align-items: center;
+      border: 1px solid black;
       width: 100%;
       border-radius: 8px;
       gap: 100px;
@@ -116,8 +120,8 @@
     .cta a:hover {
       background-color: #cc1818;
     }
-    h2, .dsg{
-     
+    h2{
+      text-align: center;
     }
   
 
@@ -132,8 +136,8 @@
       header h1 {
         font-size: 1.5rem;
       }
-      section, .intro{
-        margin-top: 150px;
+    .intro{
+        margin-top: -20px;
       }
 
       .intro h2 {
@@ -152,9 +156,13 @@
     .service:hover{
       transform: scale(1.1);
     }
+    .service:hover{
+      transform: none;
+    }
     .gallery{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
      .cta {
       display: flex;
@@ -177,7 +185,7 @@
     <h1>Galeria do Design</h1>
     <p>Transformando ideias em arte gráfica de impacto</p>
   </header>
-  <main id="principal">
+  
   <section class="intro">
     <h2>Nossos Serviços</h2>
     <p>Criação de identidade visual, design de impressos, banners, flyers e muito mais.</p>
@@ -200,7 +208,7 @@
     </div>
   </section>
 
-  <section class="intro">
+  <section class="intro2">
     <h2>Portfólio</h2>
     <div class="gallery">
       <img src="#" alt="Arte 1">
