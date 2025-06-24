@@ -230,8 +230,7 @@
   
   <section class="cta">
     <h2 class="dsg">Quer um design incrível?</h2>
-    <a href="https://wa.me/11982172256" id="teste" onmouseenter="efeito()"
-    onmouseout="efeitooff()">
+    <a href="https://wa.me/11982172256" id="teste">
       Solicite um orçamento</a>
   </section>
 
@@ -240,14 +239,14 @@
   </footer>
   </main>
   <script>
-    function efeito() {
-      const btn = document.getElementById("teste");
-      btn.style.background = "black";
-    }
-    function efeitooff(){
-       const btn2 = document.getElementById("teste");
-       btn2.style.background = "red";
-    }
+   const btn = document.getElementById("teste")
+    addEventListener("touchstart", () => {
+      btn.style.backgroundColor= "black";
+    });
+
+    addEventListener("touchend", () =>{
+      btn.style.backgroundColor = "red";
+    });
     
   </script>
 </body>
